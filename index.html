@@ -6,10 +6,127 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test task Hancharyk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+  <div class="container">
+    <header>
+      <nav class="header__navigation">
+        <ul class="navigation">
+          <li class="navigation-item"><a href="#top" class="navigation__link">Hаверх</a></li>
+          <li class="navigation-item"><a href="#disciplines" class="navigation__link">Наши дисциплины</a></li>
+          <li class="navigation-item"><a href="#text" class="navigation__link">Немного текста</a></li>
+          <li class="navigation-item"><a href="#calc" class="navigation__link">Калькулятор</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-main">
+        <div class="title-block">
+          <h1 class="title-block__title">Проект для собеседования</h1>
+          <a href="#" class="title-block__button">Переход в никуда</a>
+        </div>
+      </section>
+      <section class="section section-disciplines">
+        <h2 class="heading">Наши дисциплины</h2>
+        <p class="section-disciplines__text">Наши преподаватели могут вести довольно много дисциплин, представим
+          несколько из них с коротким описанием
+        </p>
+        <div class="disciplines">
+          <div class="disciplines-card">
+            <img class="disciplines-card__img" src="./assets/img/discipline1.svg" alt="img" height="281">
+            <h3 class="disciplines-card__title">Скретч</h3>
+            <p class="disciplines-card__text">Подготовка к реальным языкам программирования с помощью блочного
+              скриптинга
+            </p>
+          </div>
+          <div class="disciplines-card">
+            <img class="disciplines-card__img" src="./assets/img/discipline2.svg" alt="img" height="281">
+            <h3 class="disciplines-card__title">Front-end</h3>
+            <p class="disciplines-card__text">Разработка сайтов с использование HTML,CSS и JavaScript
+            </p>
+          </div>
+          <div class="disciplines-card">
+            <img class="disciplines-card__img" src="./assets/img/discipline3.svg" alt="img" height="281">
+            <h3 class="disciplines-card__title">Python</h3>
+            <p class="disciplines-card__text">Разработка программ с помощью языка Python, библиотека tkinter, изучение
+              алгоритмов
+            </p>
+          </div>
+          <div class="disciplines-card">
+            <img class="disciplines-card__img" src="./assets/img/discipline4.svg" alt="img" height="281">
+            <h3 class="disciplines-card__title">C++</h3>
+            <p class="disciplines-card__text">Работа с языком С++, консольные программы, библиотека SFML, изучение
+              алгоритмов
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section section-text">
+        <h2 class="heading">Немного текста</h2>
+        <div class="section-text__content content">
+          <div class="content__text">
+            <p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Placeat, dicta quia atque ab libero nulla
+              magnam. Fugiat
+              asperiores vero necessitatibus quidem quis rem? Eum eaque repudiandae, odit laboriosam iusto ex.
+            </p>
+            <p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Error exercitationem quam totam illo dolores
+              cupiditate
+              voluptatibus ab, est unde veniam hic fugit. Necessitatibus, quidem, a possimus sapiente tenetur pariatur
+              molestiae.
+              Repellendus ad magni sit quibusdam. Molestiae facilis, laborum doloremque exercitationem nobis
+              consequuntur obcaecati
+              delectus quos sunt maiores est consectetur autem qui. Nisi, nesciunt! Assumenda, error commodi consequatur
+              nesciunt,
+              soluta rerum. Eaque, dolorem adipisci, hic quo earum illo temporibus nostrum quia officiis eos perferendis
+              cumque
+              laboriosam iste sit ad odit dolore, aspernatur atque veniam repudiandae itaque repellat sed maiores. Rem,
+              eum.</p>
+          </div>
+          <img src="./assets/img/logo.svg" alt="logo">
+        </div>
+      </section>
+      <section class="section section-calc">
+        <h2 class="heading">Простенький калькулятор</h2>
+        <div class="calc">
+          <div class="calc__inner">
+            <p class="calc__display">display</p>
+            <div class="calc__buttons-block">
+              <span class="calc__button">1</span>
+              <span class="calc__button">2</span>
+              <span class="calc__button">3</span>
+              <span class="calc__button">4</span>
+              <span class="calc__button">5</span>
+              <span class="calc__button">6</span>
+              <span class="calc__button">7</span>
+              <span class="calc__button">8</span>
+              <span class="calc__button">9</span>
+              <span class="calc__button">0</span>
+              <span class="calc__button">+</span>
+              <span class="calc__button">-</span>
+              <span class="calc__button">*</span>
+              <span class="calc__button">/</span>
+              <span class="calc__button">=</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>Детская онлайн-школа программирования HELLO WORLD
+      </p>
+      <p>
+        Отлично, на этом сайт готов)
+      </p>
+    </footer>
+  </div>
   <script src="index.js"></script>
 </body>
 
