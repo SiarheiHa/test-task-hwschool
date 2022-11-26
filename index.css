@@ -13,6 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all .5s;
 }
 
 li {
@@ -27,6 +28,7 @@ a {
 /* base */
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -39,9 +41,16 @@ body {
 .container {
   margin: 0 auto;
   max-width: var(--content-width-desktop);
+  position: relative;
 }
 
 /* components */
+.header {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.54);
+}
+
 .navigation {
     display: flex;
     justify-content: center;
@@ -80,6 +89,11 @@ body {
   background-color: var(--color-light-XXL);
   padding: 2rem 8rem;
   border-radius: 1rem;
+}
+
+.title-block__button:hover{
+  background-color: #B1B1B2 ;
+  transform: scale(1.6);
 }
 
 .section {
@@ -209,13 +223,120 @@ body {
   align-items: center;
   justify-content: center;
 }
+.calc__button:hover {
+  background-color: #B1B1B2;
+}
 
 .footer {
-  padding: 1.8rem 7.2rem;
+  background-color: #000000;
+  font-family: var(--font-family-roboto);
+  color: var(--color-light-XXL);
+  padding: 1.8rem 14rem 1.8rem 7.2rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 768px){
-    .disciplines-card {
+  .header {
+    position: static;
+  }
+
+  .disciplines-card {
     min-height: 4.1rem;
   }
+
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.6rem;
+    padding-bottom: 0.8rem
+  }
+  .navigation__link {
+    font-family: var(--font-family-roboto);
+    padding: 1.6rem 3.8rem;
+  }
+
+  .section-main{
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+}
+
+  .title-block__title {
+    font-size: 4.2rem;
+    line-height: 4.9rem;
+  }
+
+  .title-block {
+  min-height: 14.9rem;
+}
+.title-block__button {
+  padding: 1.2rem 6.4rem;
+}
+
+  .section {
+    padding-top: 6.1rem;
+  }
+
+    .section-disciplines__text {
+    padding: 3.6rem 2.1rem 0 3.9rem;
+    text-align: center;
+  }
+
+    .disciplines {
+    gap: 3.6rem;
+    padding-bottom: 5.2rem;
+    }
+  .disciplines-card {
+    min-height: 41rem;
+  }
+  .disciplines-card__title {
+    margin-bottom: 1.3rem;
+  }
+
+  .section-text >.heading {
+  margin-left: 0rem;
+}
+
+.section-text {
+  padding-right: 4.1rem;
+  padding-left: 1.9rem;
+  padding-bottom: 5.8rem;
+}
+
+
+  .content {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 5.2rem;
+  }
+
+  .content__text {
+  padding-top: 5.5rem;
+}
+
+  .content>img {
+    width: 28rem;
+  }
+
+  .calc {
+    padding: 0.2rem;
+    max-width: 32rem;
+    margin-top: 8.2rem;
+    margin-bottom: 4.4rem;
+}
+  .calc__buttons-block {
+    margin-top: 3.8rem;
+  }
+  .calc__buttons-block {
+    column-gap: 3.9rem;
+    row-gap: 2.3rem;
+  }
+  .calc__inner {
+    padding-bottom: 1.9rem;
+  }
+  .footer {
+  padding: 1.2rem 2.8rem 2.6rem;
+  gap: 3rem;
+  text-align: justify;
+}
 }
