@@ -96,6 +96,7 @@ body {
   font-weight: 700;
   font-style: italic;
   line-height: 5.6rem;
+  text-align: center;
 }
 
 .title-block__button {
@@ -123,6 +124,7 @@ body {
   font-size: 3.2rem;
   font-weight: 700;
   line-height: 3.8rem;
+  text-align: center;
 }
 
 .section-disciplines__text {
@@ -169,7 +171,8 @@ body {
 }
 
 .section-text {
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 3rem;
   padding-bottom: 10.3rem;
 
   background: linear-gradient(180deg, #b6eaf7 3.76%, #cde33c 95.35%);
@@ -292,7 +295,6 @@ body {
 
   .navigation__link {
     padding: 1.6rem 3.8rem;
-
     font-family: var(--font-family-roboto);
   }
 
